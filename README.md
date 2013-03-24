@@ -1,12 +1,20 @@
 # EasyForum
 
-A minimalist forum web application for Rubyists. All source code (everything) is in a single ~500 line-of-code file.
+A minimalist forum web application for Rubyists. All source code (everything) is in a single ~500 line-of-code file. Check out the demo app at:
+
+http://easyforum.herokuapp.com/
 
 Now you can install EasyForum into Heroku in just 3 steps!
 
 1. Sign up for a Heroku account
 2. Register a Facebook app
 3. Run the installation script and follow the instructions
+
+Here's the list of Easy apps in the same suite:
+
+* EasyBlog - http://github.com/sausheong/easyblog
+* EasyWiki - http://github.com/sausheong/easywiki
+* EasyForum - http://github.com/sausheong/easyforum
 
 ## Features
 
