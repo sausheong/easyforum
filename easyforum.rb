@@ -211,9 +211,8 @@ post "/resource/:obj" do
 end
 
 get '/auth/login' do  
-  RestClient.get "https://www.facebook.com/dialog/oauth",
-                    params: {client_id: ENV['FACEBOOK_APP_ID'], 
-                             redirect_uri: "#{request.scheme}://#{request.host}:#{request.port}/auth/callback"}
+  redirect_url = "#{request.scheme}://#{request.host}:#{request.port}/auth/callback"
+  redirect "https://www.facebook.com/dialog/oauth?client_id=" + ENV['FACEBOOK_APP_ID'] + "&redirect_uri=" +redirect_url
 end
 
 get '/auth/callback' do
